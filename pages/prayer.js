@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import PrayerTime from "@/components/PrayerTime";
 import axios from "axios";
 import { Inter, Poppins } from "next/font/google";
 import Head from "next/head";
@@ -69,46 +68,6 @@ export default function Prayer() {
                 read more
               </button>
             </div>
-            <aside>
-              <div className="grid grid-cols-3 gap-x-8 gap-y-4">
-                <div>
-                  <img
-                    className="w-8 inline"
-                    src="/images/praying.png"
-                    alt="logo"
-                  />
-                  <h5 className="capitalize font-semibold text-[1.1rem]">
-                    name of salat
-                  </h5>
-                </div>
-                <div>
-                  <img
-                    className="w-8 inline"
-                    src="/images/adzan.png"
-                    alt="logo"
-                  />
-
-                  <h5 className="capitalize font-semibold text-[1.1rem]">
-                    azan time
-                  </h5>
-                </div>
-                <div>
-                  <img
-                    className="w-8 inline"
-                    src="/images/sunset.png"
-                    alt="logo"
-                  />
-                  <h5 className="capitalize font-semibold text-[1.1rem]">
-                    prayer time
-                  </h5>
-                </div>
-                <PrayerTime name="fajr" time={prayerTime.Fajr} />
-                <PrayerTime name="dhuhr" time={prayerTime.Dhuhr} />
-                <PrayerTime name="asr" time={prayerTime.Asr} />
-                <PrayerTime name="maghrib" time={prayerTime.Maghrib} />
-                <PrayerTime name="isha" time={prayerTime["Isha'a"]} />
-              </div>
-            </aside>
           </div>
         </section>
       </main>
