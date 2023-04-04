@@ -1,8 +1,14 @@
 import Navbar from "@/components/Navbar";
+import Announcement from "@/components/sections/Announcement";
+import Banner from "@/components/sections/Banner";
+import Donate from "@/components/sections/Donate";
 import Footer from "@/components/sections/Footer";
 import Hero from "@/components/sections/Hero";
+import KnowIslam from "@/components/sections/KnowIslam";
+import OurWork from "@/components/sections/OurWork";
 import Philosophy from "@/components/sections/Philosophy";
 import PrayerTime from "@/components/sections/PrayerTime";
+import RecentNews from "@/components/sections/RecentNews";
 import TopNavbar from "@/components/TopNavbar";
 import { Inter, Poppins } from "next/font/google";
 import Head from "next/head";
@@ -24,9 +30,15 @@ export default function Home() {
       <main className={`${poppins.className} max-w-[1450px] mx-auto`}>
         <Hero />
         <PrayerTime />
+        <KnowIslam />
+        <Announcement />
+        <RecentNews />
+        <Banner />
+        <OurWork />
+        <Donate />
         <Philosophy />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

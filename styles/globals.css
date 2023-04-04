@@ -1,21 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer utilities {
-  .curve {
-    clip-path: polygon(
-      100% 1%,
-      100% 92%,
-      84% 88%,
-      78% 87%,
-      57% 91%,
-      36% 88%,
-      27% 89%,
-      0 100%,
-      0 0
-    );
-  }
-}
+
 .hero-banner {
   background-image: url("/images/baner.png");
   @apply w-full h-screen object-cover bg-no-repeat bg-cover bg-center;
@@ -32,4 +18,12 @@
   50% {
     transform: translateY(-20px);
   }
+}
+
+.slider-container {
+  height: 300px;
+  overflow: hidden;
+}
+.slider-wrapper {
+  height: 2000px; /* 3 times the height of each item */
 }

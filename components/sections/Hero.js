@@ -1,8 +1,10 @@
+import Layout from "../Layout";
+
 function Hero() {
   return (
-    <section className="hero-banner">
-      <div className="grid lg:grid-cols-2 md:pl-16 px-4">
-        <aside className="text-gray-900 mt-16">
+    <Layout className="hero-banner md:pl-16">
+      <div className="grid lg:grid-cols-2">
+        <aside className="mt-16">
           <h3 className="md:text-5xl text-3xl capitalize font-bold mt-16 tracking-wider ">
             in the name of allah, <br /> the creator of the <br />
             universe
@@ -26,7 +28,7 @@ function Hero() {
           />
         </div>
       </div>
-    </section>
+    </Layout>
   );
 }
 
