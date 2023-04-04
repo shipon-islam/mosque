@@ -18,7 +18,7 @@ export default function OurWork() {
             alt="fg"
           />
           <h3 className="font-semibold text-gray-600 text-2xl py-3 capitalize">
-            Help To Poor
+            Helping the homeless
           </h3>
           <p className="text-gray-700">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
@@ -41,7 +41,7 @@ export default function OurWork() {
             alt="fg"
           />
           <h3 className="font-semibold text-gray-600 text-2xl py-3 capitalize">
-            Help To Poor
+            Helping the orphans
           </h3>
           <p className="text-gray-700">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
@@ -64,7 +64,7 @@ export default function OurWork() {
             alt="fg"
           />
           <h3 className="font-semibold text-gray-600 text-2xl py-3 capitalize">
-            Help To Poor
+            Helping the poor
           </h3>
           <p className="text-gray-700">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis

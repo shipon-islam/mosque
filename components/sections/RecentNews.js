@@ -31,9 +31,9 @@ function RecentNews() {
           </button>
         </div>
         <div>
-          <News image={imageUrl} />
-          <News image={imageUrl} />
-          <News image={imageUrl} />
+          <News image={imageUrl} title="ramadan alert" />
+          <News image={imageUrl} title="eid alert" />
+          <News image={imageUrl} title="iftar alert" />
         </div>
       </div>
     </Layout>
