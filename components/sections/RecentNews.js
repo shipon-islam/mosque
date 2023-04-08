@@ -30,7 +30,7 @@ function RecentNews() {
             read more
           </button>
         </div>
-        <div>
+        <div className="h-[30rem] overflow-y-auto">
           <News image={imageUrl} title="ramadan alert" />
           <News image={imageUrl} title="eid alert" />
           <News image={imageUrl} title="iftar alert" />

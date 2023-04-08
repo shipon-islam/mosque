@@ -1,34 +1,41 @@
+import { useAuth } from "@/firebase/AuthContext";
 import { Poppins } from "next/font/google";
+import Link from "next/link";
 import { useEffect, useState } from "react";
+import { FaUserPlus } from "react-icons/fa";
+import { IoLogOut } from "react-icons/io5";
+import { MdSpaceDashboard } from "react-icons/md";
 const poppins = Poppins({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(true);
+  const { currentUser, logout } = useAuth();
+  const [profileToggle, setProfileToggle] = useState(false);
   const links = [
     {
       id: 1,
       name: "home",
-      path: "/home",
+      path: "/",
     },
     {
       id: 2,
       name: "about",
-      path: "/home",
+      path: "/about",
     },
     {
       id: 3,
-      name: "education",
-      path: "/home",
+      name: "news",
+      path: "/news",
     },
     {
       id: 4,
-      name: "course",
-      path: "/home",
+      name: "announcement",
+      path: "/announcement",
     },
     {
       id: 5,
-      name: "contact",
-      path: "/home",
+      name: "donate",
+      path: "/donate",
     },
   ];
   function handleWindowClick(event) {
@@ -80,7 +87,40 @@ export default function Navbar() {
           </div>
           <div className="flex items-center ">
             <button className="bg-green-600 py-[0.5rem] px-4 text-white uppercase font-medium rounded-2xl hover:bg-lime-600  hidden md:block mr-12 lg:mr-0">
-              donate now
+              {currentUser ? (
+                <div
+                  className="relative"
+                  onClick={() => setProfileToggle((prev) => !prev)}
+                >
+                  <span>profile</span>
+                  {profileToggle && (
+                    <div className="right-10 top-[2.1rem] text-left absolute bg-lime-600 text-white capitalize  pr-8 py-4 w-[250px] rounded-md">
+                      <p className="pl-4 pr-8">
+                        <FaUserPlus className="inline-block mr-2 text-xl" />
+                        <span>{currentUser?.displayName}</span>
+                      </p>
+                      {currentUser?.displayName === "info@dhicva.org" && (
+                        <Link
+                          className="hover:bg-lime-700 pl-4 pr-8 block my-4 w-full"
+                          href="/dashboard"
+                        >
+                          <MdSpaceDashboard className="inline-block mr-2 text-xl" />
+                          <span>Dashboard</span>
+                        </Link>
+                      )}
+                      <button
+                        className="block hover:bg-lime-700 pl-4 pr-8 w-full text-left"
+                        onClick={() => logout()}
+                      >
+                        <IoLogOut className="inline-block mr-2 text-2xl" />
+                        Logout
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link href="/login">login</Link>
+              )}
             </button>
             <button
               className="block lg:hidden bg-green-600 shadow-md shadow-green-700 px-1 rounded-md"

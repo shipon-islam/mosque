@@ -19,11 +19,3 @@
     transform: translateY(-20px);
   }
 }
-
-.slider-container {
-  height: 300px;
-  overflow: hidden;
-}
-.slider-wrapper {
-  height: 2000px; /* 3 times the height of each item */
-}
