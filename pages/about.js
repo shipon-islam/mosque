@@ -18,7 +18,7 @@ export default function About() {
         <Navbar />
       </header>
       <main className={`${poppins.className} md:mx-16 mx-4`}>
-        <p>about us</p>
+        <p>about</p>
       </main>
       <Footer />
     </>

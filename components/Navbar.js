@@ -99,7 +99,7 @@ export default function Navbar() {
                         <FaUserPlus className="inline-block mr-2 text-xl" />
                         <span>{currentUser?.displayName}</span>
                       </p>
-                      {currentUser?.displayName === "info@dhicva.org" && (
+                      {currentUser?.email === "info@dhicva.org" && (
                         <Link
                           className="hover:bg-lime-700 pl-4 pr-8 block my-4 w-full"
                           href="/dashboard"
