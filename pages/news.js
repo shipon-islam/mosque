@@ -19,7 +19,7 @@ export default function News() {
       <TopNavbar />
       <Navbar />
 
-      <main className={`${poppins.className} md:mx-16 mx-4 mb-24`}>
+      <main className={`${poppins.className} mb-24`}>
         <RecentNews />
       </main>
       <Footer />

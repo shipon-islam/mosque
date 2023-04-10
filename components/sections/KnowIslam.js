@@ -3,7 +3,7 @@ import Layout from "../Layout";
 
 function KnowIslam() {
   return (
-    <Layout className="mt-24">
+    <Layout className="mt-32">
       <div className="grid md:grid-cols-2 px-4 md:px-12 py-8 gap-x-16 bg-green-600/10 rounded-md">
         <div className="">
           <img

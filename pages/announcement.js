@@ -1,5 +1,6 @@
 import HeadLine from "@/components/HeadLine";
 import Layout from "@/components/Layout";
+import Loading from "@/components/Loading";
 import Navbar from "@/components/Navbar";
 import TopNavbar from "@/components/TopNavbar";
 import Footer from "@/components/sections/Footer";
@@ -39,20 +40,24 @@ export default function Announcement() {
       <Navbar />
 
       <main className={`${poppins.className} md:mx-16 mx-4`}>
-        <Layout className="my-14 mx-10">
-          <HeadLine tittle="announcement" />
-          <p className="inline-block border-b-2 border-green-600 text-green-800 mb-2">
-            {moment(announcement?.date?.toDate()).format("MMMM Do YYYY")}
-          </p>
-          <div
-            className="text-xl mb-4 capitalize"
-            dangerouslySetInnerHTML={{
-              __html:
-                announcement?.announce ||
-                "<h3>there is no announcements from DHIC</h3>",
-            }}
-          />
-        </Layout>
+        {announcement.announce ? (
+          <Layout className="my-14 md:mx-10 overflow-hidden">
+            <HeadLine tittle="announcement" />
+            <p className="inline-block border-b-2 border-green-600 text-green-800 mb-2">
+              {moment(announcement?.date?.toDate()).format("MMMM Do YYYY")}
+            </p>
+            <div
+              className="text-lg md:text-xl mb-4 capitalize "
+              dangerouslySetInnerHTML={{
+                __html:
+                  announcement.announce ||
+                  "<h3>there is no announcements from DHIC</h3>",
+              }}
+            />
+          </Layout>
+        ) : (
+          <Loading />
+        )}
       </main>
       <Footer />
     </>

@@ -19,7 +19,7 @@ export default function Prayertime() {
       <TopNavbar />
       <Navbar />
 
-      <main className={`${poppins.className} md:mx-16 mx-4 mb-32`}>
+      <main className={`${poppins.className} mb-14`}>
         <PrayerTime />
       </main>
       <Footer />

@@ -58,13 +58,13 @@ export default function Navbar() {
        justify-between items-center navbar"
         >
           <div>
-            <a href="/">
+            <Link href="/">
               <img
                 className="w-[70px] md:w-[80px]"
                 src="/images/logo.png"
                 alt="navLogo"
               />
-            </a>
+            </Link>
           </div>
           <div
             className={`absolute lg:static w-3/4 ${
@@ -72,20 +72,26 @@ export default function Navbar() {
             } lg:w-fit min-h-[89vh] lg:min-h-fit top-[78px]  pt-7 lg:pt-0 pr-3 transition-all duration-500 -left-9 md:-left-16 origin-top-left bg-white `}
           >
             {links.map((link) => (
-              <a
+              <Link
                 key={link.id}
                 className={`${poppins.className} block text-green-900 lg:inline uppercase  font-medium py-2 lg:py-0 ml-12 text-[0.9rem] border-b border-slate-600 lg:border-white lg:border-b md:text-md hover:text-green-600 hover:border-b-2 hover:border-green-500 transition-colors duration-400 my-${link.my}`}
                 href={link.path}
                 onClick={() => setToggle((prev) => !prev)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
+            {/* mobile view only */}
+            <button className="bg-green-600 py-[0.5rem] px-4 text-white uppercase font-medium rounded-2xl hover:bg-lime-600 block  md:hidden mt-6 ml-12 w-[78%]">
+              <Link href="/donate">Donate</Link>
+            </button>
           </div>
           <div className="flex items-center ">
+            {/* desktop view only */}
             <button className="bg-green-600 py-[0.5rem] px-4 text-white uppercase font-medium rounded-2xl hover:bg-lime-600  hidden md:block mr-12 lg:mr-0">
               <Link href="/donate">Donate</Link>
             </button>
+
             <button
               className="block lg:hidden bg-green-600 shadow-md shadow-green-700 px-1 rounded-md"
               onClick={() => setToggle((prev) => !prev)}

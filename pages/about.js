@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import HeadLine from "@/components/HeadLine";
 import Layout from "@/components/Layout";
 import Navbar from "@/components/Navbar";
@@ -24,13 +25,13 @@ export default function About() {
         <Layout>
           <div className="grid md:grid-cols-2 gap-x-4 ">
             <img
-              className="rounded-lg w-full h-full mb-8  md:mb-0"
+              className="rounded-lg w-full h-full mb-8  md:mb-0 order-2 md:order-1 mt-10 md:mt-0 "
               src="/images/about_mosque.png"
               alt="about"
             />
-            <div>
+            <div className="order-1 md:order-2">
               <HeadLine tittle="about dhic" />
-              <p className="text-lg">
+              <p className="text-lg my-4">
                 Darul Hikmah Islamic Center (DHIC) is an independent,
                 non-profit, community-based, religious 501(c)(3) organization.
                 DHIC provides a dynamic space that cultivates an exchange of
@@ -41,9 +42,10 @@ export default function About() {
                 Muslim community, promoting a comprehensive Islamic way of life
                 based on the Holy Quran and the Sunnah of Prophet Muhammad.
               </p>
+              <Button name="read more" />
             </div>
           </div>
-          <div className="mt-10">
+          <div className="mt-24">
             <div className="grid md:grid-cols-2 items-center bg-green-800/20 px-5 md:pl-8 md:pr-0 rounded-md">
               <div className="pt-14">
                 <h1 className="text-2xl font-bold mb-6">

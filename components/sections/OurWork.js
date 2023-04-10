@@ -10,7 +10,7 @@ export default function OurWork() {
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eum quo
         pariatur sapiente magni voluptatem?
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 mt-10">
         <div className="px-2 md:p-5">
           <img className="rounded-lg" src="/images/homeless.png" alt="fg" />
           <h3 className="font-semibold text-gray-600 text-2xl py-3 capitalize">
