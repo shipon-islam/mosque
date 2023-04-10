@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .prayer_input {
+    @apply block border  w-full p-3 rounded mb-1 focus:outline-dotted;
+  }
+  .prayer_label {
+    @apply ml-1 text-lg;
+  }
+}
 
 .hero-banner {
   background-image: url("/images/baner.png");

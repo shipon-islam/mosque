@@ -12,11 +12,7 @@ export default function OurWork() {
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4">
         <div className="px-2 md:p-5">
-          <img
-            className="rounded-lg"
-            src="https://images.unsplash.com/photo-1680176750034-8d11a2f71096?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
-            alt="fg"
-          />
+          <img className="rounded-lg" src="/images/homeless.png" alt="fg" />
           <h3 className="font-semibold text-gray-600 text-2xl py-3 capitalize">
             Helping the homeless
           </h3>
@@ -30,16 +26,12 @@ export default function OurWork() {
               total cost:
             </p>
             <small className="text-lg mr-4 font-bold text-green-900">
-              $500
+              $900
             </small>
           </div>
         </div>
         <div className="px-2 md:p-5 p-5">
-          <img
-            className="rounded-lg"
-            src="https://images.unsplash.com/photo-1680176750034-8d11a2f71096?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
-            alt="fg"
-          />
+          <img className="rounded-lg" src="/images/orphan.png" alt="fg" />
           <h3 className="font-semibold text-gray-600 text-2xl py-3 capitalize">
             Helping the orphans
           </h3>
@@ -58,11 +50,7 @@ export default function OurWork() {
           </div>
         </div>
         <div className="px-2 md:p-5 p-5">
-          <img
-            className="rounded-lg"
-            src="https://images.unsplash.com/photo-1680176750034-8d11a2f71096?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
-            alt="fg"
-          />
+          <img className="rounded-lg" src="/images/helppoor.png" alt="fg" />
           <h3 className="font-semibold text-gray-600 text-2xl py-3 capitalize">
             Helping the poor
           </h3>
@@ -76,7 +64,7 @@ export default function OurWork() {
               total cost:
             </p>
             <small className="text-lg mr-4 font-bold text-green-900">
-              $500
+              $700
             </small>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AiFillMessage } from "react-icons/ai";
+import { FaUser } from "react-icons/fa";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { IoTime } from "react-icons/io5";
 import { MdSpaceDashboard } from "react-icons/md";
@@ -28,6 +29,12 @@ export default function SideNavbar() {
       name: "prayer time",
       path: "/dashboard/prayertime",
       Icon: <IoTime className="inline block text-lg" />,
+    },
+    {
+      id: 5,
+      name: "user register",
+      path: "/dashboard/register",
+      Icon: <FaUser className="inline block text-lg" />,
     },
   ];
   return (

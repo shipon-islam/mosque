@@ -1,7 +1,6 @@
 import { IoCall, IoLocationSharp } from "react-icons/io5";
 import { SiMinutemailer } from "react-icons/si";
-import PrayerHead from "../PrayerHead";
-import PrayerRow from "../PrayerRow";
+import PrayerTimeTable from "../PrayerTimeTable";
 
 function Footer() {
   return (
@@ -19,7 +18,7 @@ function Footer() {
           </div>
           <div>
             <h4 className="text-2xl font-medium mb-4 mt-8 sm:mt-0 text-green-800">
-              Darul Hikmah Islamic Center
+              Contact Information
             </h4>
             <ul>
               <li className="flex items-center mb-5 text-green-900">
@@ -39,44 +38,10 @@ function Footer() {
               </li>
             </ul>
           </div>
-
-          <div className="md:order-2 hidden md:block">
-            <div className="grid grid-cols-3 bg-green-600/20 py-1 rounded-md">
-              <PrayerHead title="Time Of Salat" image="/icon/salat_time.png" />
-              <PrayerHead title="Start Time" image="/icon/salat.png" />
-              <PrayerHead title="Iqamah Time" image="/icon/azan.png" />
-            </div>
-            <PrayerRow
-              image="/icon/mon.png"
-              salat="fajr"
-              time="06:21 AM"
-              iqamah="06:40 AM"
-            />
-            <PrayerRow
-              image="/icon/sun.png"
-              salat="Dhuhr"
-              time="12:52 PM"
-              iqamah="01:30 PM"
-            />
-            <PrayerRow
-              image="/icon/sun.png"
-              salat="Asr"
-              time="03:44 PM"
-              iqamah="04:45 PM"
-            />
-            <PrayerRow
-              image="/icon/sun.png"
-              salat="Maghrib"
-              time="06:08 PM"
-              iqamah="06:11 PM"
-            />
-            <PrayerRow
-              image="/icon/mon.png"
-              salat="Isha's"
-              time="07:22 PM"
-              iqamah="07:45 PM"
-            />
-          </div>
+          <PrayerTimeTable
+            headline="hidde"
+            className="hidden md:block text-green-900"
+          />
         </div>
       </div>
       <div className="bg-green-900/40">

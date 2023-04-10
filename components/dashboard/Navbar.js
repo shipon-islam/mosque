@@ -58,9 +58,9 @@ function Navbar() {
               <li className="flex-1 md:flex-none md:mr-3">
                 <Link
                   className="inline-block text-gray-400 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                  href="/dashboard/status"
+                  href="/dashboard/announcements"
                 >
-                  Status List
+                  Announce List
                 </Link>
               </li>
               <li className="flex-1 md:flex-none md:mr-3">
@@ -89,14 +89,14 @@ function Navbar() {
                         placeholder="Search.."
                       />
                       <button className="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block ">
-                        <FaUser className="inline-block text-lg" />{" "}
-                        {currentUser?.displayName}
+                        <FaUser className="inline-block text-lg mr-2" />
+                        {currentUser?.displayName || "Admin"}
                       </button>
                       <a
                         href="#"
                         className="p-2 text-white text-sm block hover:bg-gray-600 block w-full text-left rounded-md"
                       >
-                        <IoMdSettings className="inline-block text-xl" />
+                        <IoMdSettings className="inline-block text-xl mr-2" />
                         Settings
                       </a>
                       <div className="border border-gray-800 cursor-pointer" />
@@ -105,7 +105,7 @@ function Navbar() {
                         className="p-2 text-white text-sm  block hover:bg-gray-600 block w-full text-left rounded-md"
                         onClick={() => logout()}
                       >
-                        <IoLogOut className="inline-block text-2xl" />
+                        <IoLogOut className="inline-block text-2xl mr-2" />
                         Log Out
                       </button>
                     </div>

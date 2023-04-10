@@ -16,7 +16,11 @@ function RecentNews() {
 
       <div className="grid md:grid-cols-2 gap-x-5 mt-8 mx-2 md:mx-0">
         <div className="mb-8 md:mb-0">
-          <img className="rounded-lg mb-2" src={imageUrl} alt="fg" />
+          <img
+            className="rounded-lg mb-2"
+            src="/images/miracle_quran.jpg"
+            alt="fg"
+          />
           <small className="text-green-800 capitalize">april 04,2023</small>
           <h3 className="font-medium capitalize text-lg text-gray-900 my-1">
             a miracle of the quran mother's milk
@@ -30,10 +34,10 @@ function RecentNews() {
             read more
           </button>
         </div>
-        <div className="h-[30rem] overflow-y-auto">
-          <News image={imageUrl} title="ramadan alert" />
-          <News image={imageUrl} title="eid alert" />
-          <News image={imageUrl} title="iftar alert" />
+        <div className="h-[30rem] sm:h-[35rem] overflow-y-auto">
+          <News image="/images/ramadan.png" title="ramadan alert" />
+          <News image="/images/eid.png" title="eid alert" />
+          <News image="/images/iftar.png" title="iftar alert" />
         </div>
       </div>
     </Layout>

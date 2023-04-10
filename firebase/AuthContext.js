@@ -50,7 +50,7 @@ export function AuthProvider({ children }) {
       });
       setIsSignup(false);
       toast.success("Register successful", { autoClose: 1000 });
-      router.push("/");
+      router.push("/dashboard");
     } catch (err) {
       setIsSignup(false);
       toast.error("User already exist", { autoClose: 1000 });

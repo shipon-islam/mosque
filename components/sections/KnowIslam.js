@@ -8,7 +8,7 @@ function KnowIslam() {
         <div className="">
           <img
             className="relative -top-24 rounded-xl"
-            src="https://images.unsplash.com/photo-1512632578888-169bbbc64f33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            src="/images/mosque5.png"
             alt="mosque"
           />
         </div>
